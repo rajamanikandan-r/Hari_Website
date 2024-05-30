@@ -1,0 +1,259 @@
+body {
+  margin: 0px;
+  color: black;
+  /* background-image: linear-gradient(to right, #8576ff, #7bc9ff, #67c6e3); */
+}
+.parent {
+  display: grid;
+  grid-template-areas: "Header Header" "Content Sidebar" "Footer Footer";
+  height: 100vh;
+  grid-template-columns: 75% auto;
+  grid-template-rows: 20% auto 15%;
+}
+.Head {
+  /* background-image: linear-gradient(to left, #67c6e3, #378ce7, #5356ff); */
+  background-image: linear-gradient(
+    90deg,
+    rgba(121, 9, 86, 1) 14%,
+    rgba(28, 46, 129, 1) 68%,
+    rgba(1, 103, 142, 1) 84%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #5356ff;
+  grid-area: Header;
+  display: flex;
+  border: solid black 2px;
+  justify-content: flex-end;
+}
+.Head div {
+  margin-right: 50px;
+}
+.Con {
+  grid-area: Content;
+  border: solid black 2px;
+  background-image: linear-gradient(90deg, rgb(173, 14, 123), rgb(49, 80, 216));
+}
+.Side {
+  /* background-color: #67c6e3; */
+  background-image: linear-gradient(
+    to right,
+    rgba(1, 103, 142, 1),
+    rgba(0, 212, 255, 1)
+  );
+  grid-area: Sidebar;
+  border: solid black 2px;
+}
+.Foot {
+  /* background-image: linear-gradient(to left, #67c6e3, #378ce7, #5356ff); */
+  background-image: linear-gradient(
+    90deg,
+    rgba(121, 9, 86, 1) 14%,
+    rgba(28, 46, 129, 1) 68%,
+    rgba(1, 103, 142, 1) 84%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #dff5ff;
+  grid-area: Footer;
+  border: solid black 2px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.Button {
+  display: flex;
+  margin: 50px 30px;
+  padding: 30px;
+  border: solid black;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.Button:hover {
+  background-color: teal;
+}
+.Button a:hover {
+  color: white;
+}
+.Button a {
+  text-decoration: none;
+  color: white;
+  text-decoration-color: lightblue;
+}
+nav a {
+  text-decoration: none;
+  color: darkgreen;
+}
+.sidelinks {
+  margin: 20px;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-style: ridge;
+  border-color: rgb(10, 123, 89);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: radial-gradient(lightgreen, lightskyblue);
+  animation-name: colorsplash;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.1;
+}
+.Card {
+  width: 100%;
+  background-image: linear-gradient(lightskyblue, lightgreen);
+  border: 2px black solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 3%;
+  padding: 2%;
+  padding-right: 2.5%;
+  height: 70%;
+}
+.Holder {
+  display: flex;
+  width: 400%;
+  height: 90%;
+  animation: slideshow 42s infinite;
+  position: relative;
+}
+.Card img {
+  width: 100%;
+}
+.textmod {
+  margin: 2%;
+  color: darkcyan;
+}
+.textmod h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  color: white;
+}
+.Foot img {
+  width: 45px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+.Foot p {
+  font-size: 16px;
+  font-family: "Recursive", sans serif;
+}
+@keyframes slideshow{
+  0% {
+    left: 0%;
+  }
+  15% {
+    left: -100%;
+  }
+  30%{
+    left: -200%;
+  }
+  45%{
+    left: -300%;
+  }
+  60%{
+    left: -200%;
+  }
+  75% {
+    left: -100%;
+  }
+  90%{
+    left: 0%;
+  }
+}
+@keyframes colorsplash {
+  0% {
+    opacity: 0.6;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px groove blue;
+  background-color: lightgreen;
+  position: absolute;
+  top: 90%;
+
+}
+.slideshow{
+  position: relative;
+  height: 90%;
+  overflow: hidden;
+}
+.bt1{
+  left: 45%;
+}
+.bt2{
+  left: 50%;
+}
+.bt3{
+  left: 55%;
+}
+.bt4{
+  left: 60%;
+}
+.badimage{
+  height: 75%;
+}
+.btn:focus{
+  background-color: palegoldenrod;
+}
+.bt1:focus ~ .Holder{
+  animation: none;
+  left: 0%;
+}
+.bt2:focus ~ .Holder{
+  animation: none;
+  left: -100%;
+}
+.bt3:focus ~ .Holder{
+  animation: none;
+  left: -200%;
+}
+.bt4:focus ~ .Holder{
+  animation: none;
+  left: -300%;
+}
+@media only screen and (max-width:400px) {
+  .parent{
+    grid-template-columns: 80% auto;
+    grid-template-rows: 25% auto 20%;
+  }
+  .Holder{
+    flex-wrap: wrap;
+  }
+  .Card{
+    width:45%;
+    height: 460px;
+  }
+  .Card img{
+    height:145px;
+  }
+  .Side{
+    display: flex;
+    align-items:flex-end;
+  }
+  .lastsidelink{
+    margin-bottom: 50px;
+  }
+  .Foot p{
+    font-size: 14px;
+  }
+}

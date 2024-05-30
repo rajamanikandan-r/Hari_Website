@@ -1,0 +1,21 @@
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgba(121, 9, 86, 1) 14%,
+    rgba(28, 46, 129, 1) 68%,
+    rgba(1, 103, 142, 1) 84%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+div {
+  width: 400px;
+  margin: auto;
+}
+img {
+  transition: transform 2s ease-in 0.3s;
+}
+img:hover{
+  opacity: 0.9;
+  transform: skewX(15deg);
+}

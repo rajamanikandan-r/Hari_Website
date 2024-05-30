@@ -1,0 +1,35 @@
+body {
+  background-image: linear-gradient(
+    90deg,
+    rgba(121, 9, 86, 1) 14%,
+    rgba(28, 46, 129, 1) 68%,
+    rgba(1, 103, 142, 1) 84%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  font-family: "EB Garamond", serif;
+}
+img {
+  height: 125;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 2%;
+}
+h3 {
+  color: white;
+  font-family: cursive;
+  transition: transform 4s ease 0.3s;
+}
+h3:hover{
+  transform: translate(10px,15px);
+}
+.parent {
+  display: flex;
+}
+img {
+  clip-path: circle(50%);
+  transition: transform 3s ease 0.2s;
+}
+img:hover {
+  transform: translate(10%,15%);
+}
