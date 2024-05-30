@@ -6,7 +6,7 @@ body {
     rgba(1, 103, 142, 1) 84%,
     rgba(0, 212, 255, 1) 100%
   );
-  color: #5356FF;
+  color: #5356ff;
   font-size: 15px;
 }
 .common {
@@ -14,38 +14,38 @@ body {
   border: 7px solid black;
   border-radius: 7px;
   padding: 10px;
-  transition: transform 2s ease 3s;
+  transition: margin-top 2s;
   height: 375px;
 }
-.common:hover{
+.common:hover {
   margin-top: 100px;
-  transform: ScaleY(1.01);
+  /* transform: translateY(-100px); */
 }
 .Blue {
-  background-image: linear-gradient(to bottom,#FEEFAD,#FDDE55,#68D2E8);
-  color: #03AED2;
+  background-image: linear-gradient(to bottom, #feefad, #fdde55, #68d2e8);
+  color: #03aed2;
 }
 img {
   width: 100%;
 }
 .Orange {
-  background-image: linear-gradient(to bottom,#FEEFAD,#FDDE55,#68D2E8);
-  color: #03AED2;
+  background-image: linear-gradient(to bottom, #feefad, #fdde55, #68d2e8);
+  color: #03aed2;
 }
 .White {
-  background-image: linear-gradient(to bottom,#FEEFAD,#FDDE55,#68D2E8);
-  color: #03AED2;
+  background-image: linear-gradient(to bottom, #feefad, #fdde55, #68d2e8);
+  color: #03aed2;
 }
 h2 {
   font-family: "Jaro", sans-serif;
 }
 .Purple {
-  background-image: linear-gradient(to bottom,#FEEFAD,#FDDE55,#68D2E8);
-  color: #03AED2;
+  background-image: linear-gradient(to bottom, #feefad, #fdde55, #68d2e8);
+  color: #03aed2;
 }
 .parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: top;
 }
